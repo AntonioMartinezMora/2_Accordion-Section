@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FCA311 ;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+    color:#E5E5E5;
+}
+
+.text{
+    color:#E5E5E5;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.accordion{
+    width: 100%;
+    position: relative;
+}
+
+.accordion .question{
+    border-top: #E5E5E5 solid 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion .question:last-child{
+    border-bottom: #E5E5E5 solid 1px;
+}
+
+.accordion .question button{
+    /* text-decoration: none; */
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.accordion .question:hover button{
+    color: #FFFFFF;
+}
+
+.accordion .answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion .answer p{
+    color: #14213D;
+}
+
+/* FOR JAVASCRIPT */
+.fa-angle-up{
+    color: #E5E5E5;
+}
+
+
